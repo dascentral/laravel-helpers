@@ -2,16 +2,11 @@
 
 // this configuration is specific to Laravel applications
 $finder = Symfony\Component\Finder\Finder::create()
-    ->notPath('bootstrap/*')
-    ->notPath('storage/*')
     ->notPath('vendor')
     ->in([
-        __DIR__ . '/app',
-        __DIR__ . '/tests',
-        __DIR__ . '/database',
+        __DIR__ . '/src',
     ])
     ->name('*.php')
-    ->notName('*.blade.php')
     ->ignoreDotFiles(true)
     ->ignoreVCS(true);
 
