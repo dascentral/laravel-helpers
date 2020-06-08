@@ -1,0 +1,52 @@
+{
+    "name": "dascentral/laravel-helpers",
+    "type": "library",
+    "description": "A personal collection of helper functions for use within Laravel projects.",
+    "keywords": [
+        "helpers",
+        "laravel"
+    ],
+    "homepage": "https://github.com/dascentral/laravel-helpers",
+    "support": {
+        "issues": "https://github.com/dascentral/laravel-helpers/issues",
+        "source": "https://github.com/dascentral/laravel-helpers"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Douglas Smith",
+            "email": "douglas@dascentral.com",
+            "homepage": "https://dascentral.com",
+            "role": "Author"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "fzaninotto/faker": "^1.9.1",
+        "laravel/framework": "^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "nesbot/carbon": "^2.0",
+        "phpunit/phpunit": "^8.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dascentral\\Helpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "format": [
+            "vendor/bin/php-cs-fixer fix"
+        ],
+        "test": "vendor/bin/phpunit"
+    }
+}
