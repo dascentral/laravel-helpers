@@ -1,0 +1,16 @@
+{
+  "endOfLine": "lf",
+  "quoteProps": "consistent",
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "files": "*.php",
+      "options": {
+        "printWidth": 100,
+        "tabWidth": 4
+      }
+    }
+  ]
+}
