@@ -1,6 +1,6 @@
 # Laravel Helpers
 
-My personal set of helper functions for use within the [Laravel](https://laravel.com/) framework.
+My personal set of helper functions for use within [Laravel](https://laravel.com/) projects.
 
 ## Installation
 
