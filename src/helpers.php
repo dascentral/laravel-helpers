@@ -11,6 +11,7 @@ if (!function_exists('faker')) {
     function faker($property)
     {
         $faker = Factory::create();
+
         return $property ? $faker->{$property} : $faker;
     }
 }
