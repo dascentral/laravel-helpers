@@ -15,3 +15,16 @@ if (!function_exists('faker')) {
         return $property ? $faker->{$property} : $faker;
     }
 }
+
+if (!function_exists('makeCarriageReturns')) {
+    /**
+     * Convert newline characters with <br /> HTML tags.
+     *
+     * @param string $notes
+     * @return string
+     */
+    function replaceCarriageReturns($notes)
+    {
+        return str_replace("\n", '<br />', $notes);
+    }
+}
