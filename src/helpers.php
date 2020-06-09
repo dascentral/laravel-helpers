@@ -16,6 +16,21 @@ if (!function_exists('faker')) {
     }
 }
 
+if (!function_exists('formatPlainText')) {
+    /**
+     * Format plain text that has been provided for HTML display.
+     *
+     * @param  string $text
+     * @return string
+     */
+    function formatText($text)
+    {
+        $text = replaceCarriageReturns($text);
+        $text = makeClickableLinks($text);
+
+        return $text;
+    }
+}
 
 if (!function_exists('makeClickableLinks')) {
     /**
