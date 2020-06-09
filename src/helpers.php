@@ -16,6 +16,20 @@ if (!function_exists('faker')) {
     }
 }
 
+
+if (!function_exists('makeClickableLinks')) {
+    /**
+     * Convert plain text URLs with clickable links.
+     *
+     * @param string $notes
+     * @return string
+     */
+    function makeClickableLinks($notes)
+    {
+        return preg_replace('@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@', '<a href="$1" target="_blank">$1</a>', $notes);
+    }
+}
+
 if (!function_exists('makeCarriageReturns')) {
     /**
      * Convert newline characters with <br /> HTML tags.
