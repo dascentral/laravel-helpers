@@ -4,7 +4,7 @@ My personal set of helper functions for use within [Laravel](https://laravel.com
 
 ## Installation
 
-```
+```bash
 composer require dascentral/laravel-helpers
 ```
 
