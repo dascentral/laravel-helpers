@@ -6,9 +6,10 @@ if (!function_exists('faker')) {
     /**
      * Generate data via the Faker\Factory.
      *
-     * @return Faker\Factory;
+     * @param  string $property
+     * @return string|Faker\Factory;
      */
-    function faker($property)
+    function faker($property = null)
     {
         $faker = Factory::create();
 
