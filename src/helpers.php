@@ -46,7 +46,7 @@ if (!function_exists('makeClickableLinks')) {
     }
 }
 
-if (!function_exists('makeCarriageReturns')) {
+if (!function_exists('replaceCarriageReturns')) {
     /**
      * Convert newline characters with <br /> HTML tags.
      *
