@@ -24,7 +24,7 @@ if (!function_exists('formatPlainText')) {
      * @param  string $text
      * @return string
      */
-    function formatText($text)
+    function formatPlainText($text)
     {
         $text = replaceCarriageReturns($text);
         $text = makeClickableLinks($text);
